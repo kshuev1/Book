@@ -12,12 +12,9 @@ public class Book {
     }
 
     public boolean isBig() {
-        if (pages > 500) {
-            return true;
-        } else {
-            return false;
-        }
+        return pages > 500;
     }
+
 
     public boolean matches(String word) {
         if (word.contains(title) || word.contains(author)) {
