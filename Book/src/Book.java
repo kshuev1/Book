@@ -13,10 +13,8 @@ public class Book {
 
     public boolean isBig() {
         if (pages > 500) {
-            System.out.println("Книга большая");
             return true;
         } else {
-            System.out.println("Книга маленькая");
             return false;
         }
     }
@@ -36,8 +34,9 @@ public class Book {
         if (price < 250) {
             System.out.println("Цена ниже 250");
             return price;
-        } else
+        } else {
             return price;
+        }
     }
 }
 
